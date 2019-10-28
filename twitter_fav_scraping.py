@@ -16,7 +16,8 @@ for result in search_results:
     username = result.user._json['screen_name']
     time = result.created_at
     tweet = result.text
-    tweet_list.append(tweet) print(user, user_name) print(tweet)
+    tweet_list.append(tweet) print(user, user_name)
+    print(tweet)
     print(time)
     try:
         # いいね！をする
