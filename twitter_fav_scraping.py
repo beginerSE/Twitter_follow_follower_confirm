@@ -16,7 +16,8 @@ for result in search_results:
     username = result.user._json['screen_name']
     time = result.created_at
     tweet = result.text
-    tweet_list.append(tweet) print(user, user_name)
+    tweet_list.append(tweet)
+    print(user, username)
     print(tweet)
     print(time)
     try:
