@@ -1,4 +1,16 @@
-import tweepy 
+import tweepy
+
+# 各種APIキーをセット
+# twitterのAPI鍵
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_secret = ''
+
+# 必要なインスタンスを生成
+auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+auth.set_access_token(access_token, access_secret)
+api = tweepy.API(auth)
 
 # 検索キーワードを指定
 q = 'python' 
