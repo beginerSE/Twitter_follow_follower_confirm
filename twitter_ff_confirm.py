@@ -1,5 +1,6 @@
 import tweepy
 
+# ここに自分のアカウントのID(@以降)とAPI鍵・アクセストークンを入力する
 api_dict = {
            　'my_account_id':['api_pub',
                                'api_sec',
@@ -9,7 +10,7 @@ api_dict = {
            }
 
 
-# フォローしていなくても外さないアカウントのリスト
+# フォローしていなくても外さないアカウントのリスト(IDの@以下を入力する)
 unrequited_list = {
                    'my_account_id':['MSkieller',
                                     'BitcoinSVinfo',
@@ -20,7 +21,7 @@ unrequited_list = {
                   }
 
 
-
+#複数のアカウントで運用するためにfor文で回す
 for k, v in api_dict.items():
     
     consumer_key = v[0]
@@ -69,7 +70,6 @@ for k, v in api_dict.items():
                     api.destroy_friendship(following)
                     api_limit += 1
                     unfollow_user += 1
-
 
         for follower in followers_id:
             # フォローを返していないユーザーにフォローを返す
