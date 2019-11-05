@@ -1,0 +1,2 @@
+# twitter_follow_follower_confirm
+TwitterのAPIを使って自分のアカウントの相互フォローになっていないアカウントをリムったり、フォローしたりするスクリプト
